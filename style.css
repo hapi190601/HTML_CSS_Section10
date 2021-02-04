@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 header {
@@ -36,7 +36,7 @@ footer {
 }
 
 .contents {
-  margin: 10px;
+  padding: 10px;
 }
 
 .step {
@@ -68,6 +68,30 @@ footer {
   letter-spacing: 1.5px;
 }
 
-.box p {
-  letter-spacing: 1.5px;
+
+
+
+
+
+/* レスポンジブ対応 */
+
+@media (max-width: 769px) {
+  .container {
+    width: 100%;
+    display: block;
+    padding: 50px 0;
+  }
+
+  .box {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .box:nth-child(3) {
+    margin: 0 auto;
+  }
+
+  .image {
+    background-position: bottom;
+  }
 }
